@@ -24,10 +24,17 @@ public class ElectricityBilling {
 		int gObj = aObj.nextInt();
         System.out.println(gObj*2);
 	}
+	static void gasBill() {
+		Scanner bObj = new Scanner(System.in);
+		System.out.println("Enter unit:");
+		int cObj =bObj.nextInt();
+		System.out.println(cObj*30);
+	}
 		
 public static void main(String[] args) {
 	ElectricityBilling eObj = new ElectricityBilling();
 	eObj.waterBill();
+	gasBill();
 }
 	}
 
