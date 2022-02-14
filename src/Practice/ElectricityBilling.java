@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ElectricityBilling {
 	
-	int unit = 110;
+	private int unit = 110;
 	{
 	
   if (unit >100) {
