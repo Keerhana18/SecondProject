@@ -5,12 +5,14 @@ public class StringReverse {
 		
 	
 	String first = "abcdef";
-	System.out.println("Original String:"+first);
-	StringBuilder Second = new StringBuilder(first);
-	Second.reverse();
-	String value = Second.toString();
-	System.out.println("Reversed:" +value);
-	
-}
-
+	String Reverse = "'";
+	System.out.println(first);
+	int length= first.length();
+	for (int i=length-1;i>=0;i--) {
+		Reverse=Reverse + first.charAt(i);
+		if(first.equalsIgnoreCase(Reverse)) {
+		System.out.println(Reverse);
+	}
+	}
+	}
 }
