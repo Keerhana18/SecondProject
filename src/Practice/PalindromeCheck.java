@@ -8,19 +8,20 @@ public class PalindromeCheck {
 	
 String  first ="";
 String Final = "";
-Scanner aObj = new Scanner(System.in);
-System.out.println("Enter String to Check:");
- first =aObj.next();
-int j = first.length();
-for (int i = j-1;i>=0;i--) {
-	Final = Final+first.charAt(i);
-	
+Scanner input = new Scanner(System.in);
+System.out.println("Enter String to reverse:");
+String first1 = input.nextLine();
+int length=first.length();
+for (int i = length-1; i>0;i--) {
+	String Final1= Final+first.charAt(i);
+	if(first1.equals(Final1))
+	{
+		System.out.println("It is Palindrome");
 	}
-if(first.equalsIgnoreCase(Final)) {
-	System.out.println("Entered String is Palindrome");
-}
-else {
-	System.out.println("Entered string is not a Palindrome");
-}
+	else
+	{
+		System.out.println("Not a Palindrome");
 	}
+}
+}
 }

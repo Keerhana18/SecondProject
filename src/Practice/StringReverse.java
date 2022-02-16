@@ -4,7 +4,7 @@ public class StringReverse {
 	public static void main(String[] args) {
 		
 	
-	String first = "Abcde";
+	String first = "abcdef";
 	System.out.println("Original String:"+first);
 	StringBuilder Second = new StringBuilder(first);
 	Second.reverse();
