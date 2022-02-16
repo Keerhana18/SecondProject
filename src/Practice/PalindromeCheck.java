@@ -30,7 +30,8 @@ else {
 Scanner in = new Scanner(System.in);
 System.out.println("Enter a number to check:");
 int n = in.nextInt();
-int sum= 0,r;
+int sum= 0;
+int r =0;
 int temp = n;
 while(n>0){
 	r=n%10;
